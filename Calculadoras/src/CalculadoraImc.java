@@ -15,12 +15,12 @@ public class CalculadoraImc extends JFrame {
         calculadora.setDefaultCloseOperation(EXIT_ON_CLOSE);
         calculadora.setBounds(500, 130, 300, 400);
         calculadora.setResizable(false);
-
         // Modificando meu Frame para BorderLayout
         calculadora.setLayout(new BorderLayout());
 
-        // Criando o meu Painel Superior
-        JPanel painelSuperior = new JPanel(new BorderLayout());
+        JPanel painelCenter = new JPanel();
+        calculadora.add(painelCenter, BorderLayout.CENTER);
+        painelCenter.setLayout(new GridLayout(2, 2, 10, 10));
 
         // Criando os Componentes
         JTextField resultado = new JTextField();
@@ -30,14 +30,10 @@ public class CalculadoraImc extends JFrame {
         JTextField inserirPeso = new JTextField();
         JButton enviar = new JButton("Calcular");
 
-
-        // Adicionando os Componentes ao Painel Superior
-        JPanel camposPanel = new JPanel(new GridLayout(2, 2, 10, 10));
-        camposPanel.add(altura);
-        camposPanel.add(peso);
-        camposPanel.add(inserirAltura);
-        camposPanel.add(inserirPeso);
-        painelSuperior.add(camposPanel, BorderLayout.NORTH);    
+        painelCenter.add(altura);
+        painelCenter.add(peso);
+        painelCenter.add(inserirAltura);
+        painelCenter.add(inserirPeso);
 
 
         calculadora.setVisible(true);
