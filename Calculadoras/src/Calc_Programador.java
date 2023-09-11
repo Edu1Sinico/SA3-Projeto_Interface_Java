@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class Calc_Programador extends JFrame{
     public Calc_Programador() {
@@ -53,11 +55,13 @@ public class Calc_Programador extends JFrame{
         }
 
         // Setando o frame
-        janela.setBounds(470,100,336,440);
+        janela.setBounds(470,100,270,335);
         janela.setDefaultCloseOperation(2);
         janela.setVisible(true);
         janela.pack();
         janela.setResizable(false);
 
     }
+
+
 }
