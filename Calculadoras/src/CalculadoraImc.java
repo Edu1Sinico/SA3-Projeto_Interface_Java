@@ -43,10 +43,12 @@ public class CalculadoraImc extends JFrame {
         // Criando os Componentes
         JLabel titulo = new JLabel("CALCULADORA DE IMC"); // Norte
         JTextField resultado = new JTextField(10); // Norte
+
         JLabel altura = new JLabel("Altura CM"); // Leste
         JTextField inserirAltura = new JTextField(5); // Leste
         JLabel peso = new JLabel("Peso KG"); // Leste
         JTextField inserirPeso = new JTextField(5); // Leste
+
         JButton enviar = new JButton("Calcular"); // Sul
         Dimension tamanhoBotao = new Dimension(150, 30); // Sul
 
@@ -63,7 +65,7 @@ public class CalculadoraImc extends JFrame {
         // Inserindo os Componentes no CENTRO
         JPanel painelRecebimento = new JPanel();
         painelInfos.add(painelRecebimento, BorderLayout.CENTER);
-        painelRecebimento.setLayout(new GridLayout(5, 1));
+        painelRecebimento.setLayout(new GridLayout(4, 1));
         painelRecebimento.add(altura);
         painelRecebimento.add(inserirAltura);
         painelRecebimento.add(peso);
@@ -72,7 +74,7 @@ public class CalculadoraImc extends JFrame {
 
         // Inserindo os Componentes no SUL
         JPanel painelEnviar = new JPanel();
-        painelCalcular.add(painelEnviar, BorderLayout.SOUTH);
+        painelCalcular.add(painelEnviar, BorderLayout.CENTER);
         painelEnviar.add(enviar);
 
         // Formatando o Botão
