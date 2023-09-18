@@ -1,5 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        new JanelaTab();
+        new CalculadoraSimples();
+        // new CalculadoraImc();
+        // new Calc_Programador();
     }
 }
