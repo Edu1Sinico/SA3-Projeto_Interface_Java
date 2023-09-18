@@ -4,7 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 
-public class CalculadoraSimples {
+public class CalculadoraSimples extends JFrame{
     private JFrame frame;
     private JPanel panel;
     private JLabel titleLabel;
